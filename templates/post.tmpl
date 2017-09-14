@@ -1,0 +1,18 @@
+{{ define "title" }}{{ .Title }}{{end}}
+{{ define "body" }}
+<div class="container">
+    <div class="row">
+        <div class="blog-main">
+            <div class="blog-post">
+                <h2 class="blog-post-title">{{ .Title }}</h2>
+                <p class="blog-post-meta">{{ .Date }} by <a href="/aboutme">{{ .Author }}</a></p>
+                <!-- <li>Title       : {{ .Title }}. </li>
+                <li>Author      : {{ .Author }}. </li>
+                <li>Description : {{ .Description }}. </li>
+                <li>Date        : {{ .Date }}. </li> -->
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

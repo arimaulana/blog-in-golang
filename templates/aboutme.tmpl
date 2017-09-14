@@ -1,0 +1,10 @@
+{{ define "title" }}About Me{{end}}
+{{ define "body" }}
+<h2>This is About me page.</h2>
+<ul>
+    <li>My name is {{ .Name }}. </li>
+    <li>I live in {{ .City }}. </li>
+    <li>And I love {{ .Nationality }}. </li>
+</ul>
+<p><a href="/">Home</a></p>
+{{end}}

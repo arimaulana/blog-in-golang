@@ -1,0 +1,22 @@
+{{ define "base" }}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Ari Maulana | {{ block "title" . }} {{end}}</title>
+        {{block "style" .}} {{end}}
+    </head>
+
+    <body>
+        {{template "navbar" .}}
+        {{template "blog-header" .}}
+        {{template "body" .}}
+        <footer>{{block "footer" .}} {{end}}</footer>
+        {{block "js" .}} {{end}}
+    </body>
+
+</html>
+
+{{end}}

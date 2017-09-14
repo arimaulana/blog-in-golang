@@ -1,0 +1,12 @@
+{{ define "title" }}Article's Index{{end}}
+{{ define "body" }}
+<div class="container">
+    <h3>Table of Content</h3>
+    {{range .Post}}
+        <div>
+            <p class="blog-post-meta"><a href="/articles/{{.Link}}">{{ .Date }} - {{.Title}}</a></p>
+            <p>{{ .Description }}</p>
+        </div>
+    {{end}}
+</div>
+{{end}}
