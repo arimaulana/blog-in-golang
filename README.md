@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Simple Static Blog in Golang
 
 This project still being used for my blog. Well, the idea is to keep blog simple without database configuration and just serving what we wrote.
@@ -25,6 +24,3 @@ and other as you want it be.
 + Need to restart everytime you update post
 + Still learn to make it clean code
 + Not tested yet
-=======
-# blog-in-golang
->>>>>>> 359cfb10285674341450aade0a347237d074e3ba
